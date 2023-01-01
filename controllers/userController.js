@@ -47,7 +47,7 @@ module.exports = {
 
            //await means the following lines won't be executed until this lines finish its execution
            await newUser.save()
-           res.status(201).json({Result:"new User is created with email "+newUser.emailId})
+           res.status(201).json({Result:"New user is created with email "+newUser.emailId})
         }
         catch(err){
             res.status(400).json({Message:"Invalid Request "+err})
@@ -99,7 +99,8 @@ module.exports = {
             //return token and user object
             return res.status(200).json({
                 jwt : token,
-                user
+                user,
+                Result : "Logged in successfully"
             })
 
         }
