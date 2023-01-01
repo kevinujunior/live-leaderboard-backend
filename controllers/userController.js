@@ -103,6 +103,7 @@ module.exports = {
             })
 
         }
+
         catch(err){
             res.status(400).json({Message:"Invalid Request "+err})
         }
@@ -110,6 +111,28 @@ module.exports = {
 
     getAllUsers : async(req,res,next) =>{
 
+        try{
+            //first curly braces equivalent to sql where
+            //second curly brace equivalent to sql select
+            //apply condition
+            const users = await User.find({},{_id:0,password:0},{
+                sort:{
+                    eth:-1
+                }
+            });
+
+            if(users.length===0){
+                return res.status(404).json({message:"No users found"})
+            }
+
+            return res.status(200).json({
+                result : users
+            });
+        }
+    
+        catch(err){
+            res.status(400).json({Message:"Invalid Request "+err})
+        }
     }
 
 }

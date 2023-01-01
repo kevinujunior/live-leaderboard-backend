@@ -12,7 +12,7 @@ module.exports = {
     authenticate : async(req,res,next) => {
         try{
             const token = req.headers.authorization
-            console.log(token)
+            
             if(!token){
                 req.user = undefined
                 throw new Error("User not found")
@@ -26,7 +26,7 @@ module.exports = {
             
             //We get user by querying decodedUser into database by _id
             const user = await User.findById(decodedUser._id)
-            //console.log(user)
+            
             req.user = user
 
             //next is used for post middleware process
