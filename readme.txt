@@ -12,3 +12,8 @@ Sample User and Password
 
 email - dim@gmail.com
 password - admin
+
+
+
+Deployed link
+https://kevinujunior-live-leaderboard-backend.azurewebsites.net/
