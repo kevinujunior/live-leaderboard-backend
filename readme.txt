@@ -35,7 +35,7 @@ D:\GitHub\MERN\live-leaderboard\live-leaderboard-backend>npm i jsonwebtoken
 
 D:\GitHub\MERN\live-leaderboard\live-leaderboard-backend>npm i util
 
-
+D:\GitHub\MERN\live-leaderboard\live-leaderboard-backend>npm i socket.io
 
 /*
 

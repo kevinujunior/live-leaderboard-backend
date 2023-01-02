@@ -127,8 +127,10 @@ module.exports = {
             }
 
             return res.status(200).json({
-                result : users
+               result : users
             });
+
+            
         }
     
         catch(err){

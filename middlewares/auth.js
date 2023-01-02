@@ -19,16 +19,17 @@ module.exports = {
             }
 
             var decodedUser = undefined
-
+           
             jwt.verify(token, process.env.JWTSECRET, function(err, decoded) {
                 decodedUser = decoded
               });
             
+        
             //We get user by querying decodedUser into database by _id
             const user = await User.findById(decodedUser._id)
             
             req.user = user
-
+            
             //next is used for post middleware process
             next()
         }
