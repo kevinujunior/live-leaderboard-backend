@@ -87,6 +87,10 @@ io.on("connection", (socket) => {
             }
         });
 
+        //to update single user data
+        //socket.emit('updated_score',allUsers)
+
+        //to update whole database
         io.sockets.emit('updated_score',allUsers)
             
     })
