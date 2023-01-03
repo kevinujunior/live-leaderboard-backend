@@ -10,7 +10,7 @@ Steps to use this project:
 
 Sample User and Password
 
-email - dim@gmail.com
+email - dim@gmail.com <br/>
 password - admin
 
 
