@@ -20,5 +20,6 @@ https://kevinujunior-live-leaderboard-backend.azurewebsites.net/
 
 
 
-##Workflow of Websockets
+## Workflow of Websockets
+
 ![alt sockets](https://github.com/kevinujunior/live-leaderboard-backend/blob/main/sockets.png)
