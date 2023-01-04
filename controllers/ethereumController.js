@@ -1,10 +1,10 @@
-//There will be two actions users can do - deposit ethereum and withdraw ethereum
 
-
-//Here we have used key-value export 
 module.exports = {
 
-    //function to handle ethereum deposit requests
+    /*
+        Purpose :  To deposit ethereum
+        Input : Amount to be deposited
+    */
     ethereumDeposit : async(req,res,next)  => {
         try{
             const score = req.body.score
@@ -20,7 +20,11 @@ module.exports = {
         }
     },
 
-    //function to handle ethereum withdraw requests
+    /*
+    Purpose :  To withdraw ethereum
+    Input : Amount to be withdrawn
+    */
+
     ethereumWithdraw : async(req,res,next)  => {
         try{
 
